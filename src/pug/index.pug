@@ -1,0 +1,22 @@
+include data
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title iMake
+		each style in styles
+			link(rel="stylesheet", href=style)
+			
+	body
+		#main
+			#wrapper
+				include general
+				include social
+				include footer
+
+			
+		
+		each script in scripts
+			script(src=script)

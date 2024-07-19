@@ -1,0 +1,36 @@
+section#general
+	#logo
+		a(href="#")
+			.company-name iMake
+			.slogan creative agency
+	#menu
+		ul
+			each item, index in menu
+				li
+					a(href="#", data-slide-id=index) #{item}
+	#content-container
+		.slider-buttons
+			.buttons
+				button.button-prev#main-slider-prev
+				button.button-next#main-slider-next
+		.content
+			.slider#main-slider
+				.slide
+					img(src="img/girl.jpg", alt="")
+				each item, index in menu
+					if index != 0
+						.slide
+							.slide-content
+								.title
+									h2 #{item}
+								.text
+									p.bold.
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+										industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
+										and scrambled it to make a type specimen book.
+									p.
+										It has survived not only five centuries, but also the leap into electronic 
+										typesetting, remaining essentially unchanged. It was popularised in the 
+										1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+										and more recently with desktop publishing software like Aldus PageMaker 
+										including

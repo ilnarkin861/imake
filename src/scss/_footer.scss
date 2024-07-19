@@ -1,0 +1,45 @@
+footer{
+	margin-top: 80px;
+	padding: 0 10px;
+	color: var(--white);
+	font-size: var(--footer_font_size);
+	font-weight: 400;
+
+	.copyright,
+	.author{
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.author{
+		span,
+		img{
+			vertical-align: middle;
+		}
+	}
+
+	@media (min-width: 1000px){
+		margin-top: 42px;
+
+		&::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		.copyright,
+		.author{
+			width: 50%;
+		}
+
+		.copyright{
+			float: left;
+			text-align: left;
+		}
+
+		.author{
+			float: right;
+			text-align: right;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 1;
+
+	&::after,
+	&::before{
+		box-sizing: border-box;
+	}
+}
+
+p{
+	margin: 0;
+}
+
+a{
+	color: inherit;
+	text-decoration: none!important;
+}
+
+button{
+	background: none;
+	border: none;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+button,
+button:focus,
+a button,
+a button:focus{
+	outline: none;
+	box-shadow: none!important;
+}
+
+textarea:focus,
+input:focus,
+select:focus{
+	outline: none;
+}
+
+ul{
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	margin-bottom: 0;
+	color: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+}
